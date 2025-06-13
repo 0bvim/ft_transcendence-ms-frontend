@@ -1,0 +1,38 @@
+{
+  "name": "ft_transcendence-ms-frontend",
+  "version": "1.0.0",
+  "description": "frontend for transcendence",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "dev": "ts-node src/ts/main.ts",
+    "watch": "nodemon --exec ts-node src/ts/main.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/0bvim/ft_transcendence-ms-frontend.git"
+  },
+  "keywords": [
+    "pong",
+    "frontend",
+    "typescript",
+    "tailwind",
+    "static-server"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/0bvim/ft_transcendence-ms-frontend/issues"
+  },
+  "homepage": "https://github.com/0bvim/ft_transcendence-ms-frontend#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "http-server": "^14.1.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "fastify": "^5.4.0",
+    "ts-node": "^10.9.2"
+  }
+}
