@@ -1,38 +1,30 @@
 {
   "name": "ft_transcendence-ms-frontend",
   "version": "1.0.0",
-  "description": "frontend for transcendence",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/main.js",
-    "dev": "ts-node src/ts/main.ts",
-    "watch": "nodemon --exec ts-node src/ts/main.ts"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/0bvim/ft_transcendence-ms-frontend.git"
-  },
-  "keywords": [
-    "pong",
-    "frontend",
-    "typescript",
-    "tailwind",
-    "static-server"
-  ],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/0bvim/ft_transcendence-ms-frontend/issues"
-  },
-  "homepage": "https://github.com/0bvim/ft_transcendence-ms-frontend#readme",
-  "devDependencies": {
-    "@types/node": "^24.0.1",
-    "http-server": "^14.1.1",
-    "typescript": "^5.8.3"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix"
   },
   "dependencies": {
-    "fastify": "^5.4.0",
-    "ts-node": "^10.9.2"
-  }
-}
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.45.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.6",
+    "typescript": "^5.0.2",
+    "vite": "^5.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "ft_transcendence frontend microservice"
+} 
